@@ -26,9 +26,7 @@ export default function(Component) {
       const token = localStorage.getItem("jwt");
       const notLoggedIn = (
         <div>
-          <h1>To see the users, please log in or register.</h1>
-          <Button onClick={this.toLogin}>Log In</Button>
-          <Button onClick={this.toRegister}>Register</Button>
+          <h1>To see the jokes, please log in or register.</h1>
         </div>
       );
 

@@ -4,6 +4,7 @@ import { Route, NavLink, withRouter } from "react-router-dom";
 import { Button } from "reactstrap";
 import Register from "./components/register";
 import Login from "./components/login";
+import Jokes from "./components/jokes";
 
 class App extends Component {
   logout = () => {
@@ -29,7 +30,7 @@ class App extends Component {
         <main>
           <Route path="/register" component={Register} />
           <Route path="/login" component={Login} />
-          {/* <Route path="/jokes" component={Jokes} /> */}
+          <Route path="/jokes" component={Jokes} />
         </main>
       </>
     );

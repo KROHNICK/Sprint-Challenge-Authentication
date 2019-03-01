@@ -2,7 +2,7 @@ import React from "react";
 import axios from "axios";
 import { Button } from "reactstrap";
 
-axios.defaults.baseURL = "localhost:3000/api";
+axios.defaults.baseURL = "http://localhost:3300/api";
 axios.interceptors.request.use(
   function(options) {
     options.headers.authorization = localStorage.getItem("jwt");
